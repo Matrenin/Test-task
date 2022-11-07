@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Test task</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header__box">
+            <div class="header__top">
+                <a href="#" class="logo__link">
+                    <img src="img/pizza.png" alt="logo" height="60">
+                </a>
+                <a href="#" class="personal__area">
+                    <img src="img/user.png" alt="personal area" height="50">
+                    <p>Личный кабинет</p>
+                </a>
+            </div>
+        </div>
+        <div class="header__bot">
+            <nav class="nav__link">
+                <a href="#">Пицца</a>
+                <a href="#">Напитки</a>
+                <a href="#">Акции</a>
+                <a href="#">Десерты</a>
+                <a href="#">Контакты</a>
+            </nav>
+            <button class="basket">Корзина</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="products"></section>
+
+        <div class="modal__form">
+            <form action="#" class="form">
+                <h1>Заполните и отправьте форму</h1>
+                <label for="formName">Имя*: </label>
+                <input type="text" id="formName" name="name" placeholder="Иван" class="input__req name">
+                <label for="formPhone">Телефон*: </label>
+                <input type="text" id="formPhone" name="phone" placeholder="999-000-00-00" class="input__req phone">
+                <label for="formProduct">Название товара: </label>
+                <input type="text" id="formProduct" name="product" autocomplete="off" class="input__req">
+                <button type="submit" class="btn__send">Отправить</button>
+                <p class="error__text">Вы&nbsp;ввели некорректные данные, заполните обязательные поля.</p>
+                <button id="close">&times;</button>
+            </form>
+        </div>
+
+        <div class="send">
+            <div class="send__box">
+                <h1>Сообщение отправленo</h1>
+                <p>Имя: <span class="modal__mail-name"></span></p>
+                <p>Телефон: <span class="modal__mail-phone"></span></p>
+                <p>Hазвание товара: <span class="modal__mail-title"></span></p>
+            </div>
+        </div>
+
+    </main>
+    
+    <script src="js/main.js"></script>
+
+</body>
+</html>
