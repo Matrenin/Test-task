@@ -21,7 +21,7 @@ class ProductList {
       {
         id: 2,
         title: 'Гавайская',
-        img: 'img/гавайская.jpg',
+        img: 'img/Гавайская.jpg',
         price: 470
       },
       {
